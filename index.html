@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
+
+  <title>Flight Cards</title>
+</head>
+
+<body class="min-h-screen bg-[#F7F6F8]">
+
+  <main class="flex min-h-screen flex-wrap items-center justify-center gap-8 px-5 py-10">
+
+
+    <section
+      class="relative h-[600px] w-[350px] overflow-hidden
+             rounded-[50px] border-[8px] border-white
+             bg-cover bg-center
+             bg-[url('images/New_york_City.avif')]
+             shadow-[0_10px_25px_rgba(0,0,0,0.15)]"
+    >
+
+      <div class="absolute inset-0
+               bg-gradient-to-t
+               from-black/55
+               via-black/55
+               to-transparent">
+        
+
+      <button
+        type="button"
+        aria-label="Add New York to favorites"
+        class="absolute right-6 top-6 z-20
+               flex h-12 w-12 items-center justify-center
+               rounded-full
+               border border-white/20
+               bg-white/15
+               backdrop-blur-md
+               transition duration-300
+               hover:scale-105
+               hover:bg-white/30"
+      >
+        <i class="fa-regular fa-heart text-xl text-white"></i>
+      </button>
+
+      <div
+        class="absolute bottom-0 left-0 right-0 z-10
+               px-6 pb-6"
+      >
+
+        <h1
+          class="text-[36px] font-bold
+                 leading-tight tracking-tight
+                 text-white"
+        >
+          New York
+        </h1>
+
+        <p class="mt-1 text-base text-gray-200">
+          Economy
+        </p>
+
+        <div
+          class="mt-5 flex items-center gap-6
+                 text-base text-white"
+        >
+
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-tag"></i>
+
+            <span>
+              from <strong>$120</strong>
+            </span>
+          </div>
+
+
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-plane"></i>
+
+            <span class="font-semibold">
+              JFK
+            </span>
+          </div>
+
+        </div>
+
+        <button
+          type="button"
+          class="mt-6 h-12 w-full
+                 rounded-full
+                 bg-white
+                 text-base font-semibold
+                 text-gray-900
+                 shadow-md
+                 transition duration-300
+                 hover:bg-gray-100
+                 active:scale-[0.98]"
+        >
+          Search flight
+        </button>
+
+      </div>
+      </div>
+
+    </section>
+
+
+    <section
+      class="h-[600px] w-[350px]
+             overflow-hidden
+             rounded-[50px]
+             border-[8px] border-white
+             bg-white
+             shadow-[0_10px_25px_rgba(0,0,0,0.15)]"
+    >
+
+      <div
+        class="relative h-[375px] w-full
+               overflow-hidden
+               rounded-[27px]
+               bg-cover bg-center
+               bg-[url('images/san_francisco_bridge.jpg')]"
+      >
+
+
+      </div>
+
+      <div class="px-6 pt-5">
+
+        <h2
+          class="text-[32px]
+                 font-bold
+                 leading-tight
+                 tracking-tight
+                 text-gray-900"
+        >
+          San Francisco
+        </h2>
+
+        <p class="mt-1 text-base text-gray-400">
+          Premium economy
+        </p>
+
+        <div
+          class="mt-4 flex items-center gap-6
+                 text-base text-gray-900"
+        >
+
+          <div class="flex items-center gap-2">
+
+            <i class="fa-solid fa-tag text-gray-400"></i>
+
+            <span>
+              from <strong>$240</strong>
+            </span>
+
+          </div>
+
+
+          <div class="flex items-center gap-2">
+
+            <i class="fa-solid fa-plane text-gray-400"></i>
+
+            <span class="font-semibold">
+              SFO
+            </span>
+
+          </div>
+
+        </div>
+
+        <div class="mt-2.5 flex items-center gap-3">
+
+          <button
+            type="button"
+            class="h-12 flex-1
+                   rounded-full
+                   bg-gray-900
+                   text-sm font-semibold
+                   text-white
+                   shadow-md
+                   transition duration-300
+                   hover:bg-gray-700
+                   active:scale-[0.98]"
+          >
+            Search flight
+          </button>
+
+
+          <button
+            type="button"
+            aria-label="Favorite San Francisco"
+            class="flex h-12 w-12
+                   items-center justify-center
+                   rounded-full
+                   bg-gray-100
+                   transition duration-300
+                   hover:bg-gray-200
+                   active:scale-95"
+          >
+            <i
+              class="fa-regular fa-heart
+                     text-lg
+                     text-[#ff5757]"
+            ></i>
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
